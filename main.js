@@ -781,6 +781,7 @@ async function main() {
 
     const gl = canvas.getContext("webgl2", {
         antialias: false,
+        powerPreference: 'high-performance', 
     });
 
     const vertexShader = gl.createShader(gl.VERTEX_SHADER);
